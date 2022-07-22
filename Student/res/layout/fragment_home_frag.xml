@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_frag">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:id="@+id/banner"
+                    android:background="@drawable/back"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/snclass"></ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="S.N. CLASSES"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="Ostwal Nagar,Nallasopara(E)"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"></TextView>
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="411dp"
+                    android:layout_height="550dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="-1dp"
+                    android:layout_marginTop="180dp"
+                    android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/teacher" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="BEST TEACHERS"
+                        android:textColor="@color/red"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="We provide best teachers who hold high degrees in their respective subjects and makes subjects easy to understand!!"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_black"
+                        android:textSize="17sp"></TextView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/test" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="REGULAR TESTS"
+                        android:textColor="@color/light_green"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="We conduct regular tests of Students to ensure their regular revision and better performance!!"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_black"
+                        android:textSize="17sp"></TextView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/result" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="BEST PERFORMANCE"
+                        android:textColor="#F1C70E"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="We ensure that our students properly focus on their studies and  give their best performance!!"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_black"
+                        android:textSize="17sp"></TextView>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/classroom" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="7dp"
+                        android:text="BEST INFRASTRUCTURE"
+                        android:textColor="@color/light_blue"
+                        android:textSize="22sp"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:text="We provide best infrastructure facilities to our students to make them comfortable while learning !!"
+                        android:textAlignment="center"
+                        android:textColor="@color/light_black"
+                        android:layout_marginBottom="5dp"
+                        android:textSize="17sp"></TextView>
+
+                </LinearLayout>
+                </ScrollView>
+            </RelativeLayout>
+</RelativeLayout>

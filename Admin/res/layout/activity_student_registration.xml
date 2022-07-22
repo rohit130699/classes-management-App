@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bground"
+    tools:context="com.example.online_class.student_registration">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="5dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_pic"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="6dp"
+                android:id="@+id/imageView"/>
+
+            <!--<ImageView
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rnd"
+                android:scaleType="centerCrop" />-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/browse"
+                android:clickable="true"
+                android:src="@drawable/ic_action_photo"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-67dp"
+                android:backgroundTint="@color/pink"
+                app:borderWidth="0dp"
+                app:elevation="6dp"/>
+
+           <!-- <Button
+                android:id="@+id/browse"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:background="@drawable/round"
+                android:drawableLeft="@drawable/ic_action_photo"
+                android:drawablePadding="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="BROWSE"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"></Button> -->
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/ic_action_name"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Full Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/std"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_grade"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:inputType="number"
+                android:hint="Standard"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/mail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_baseline_mail"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_phone"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Contact Number"
+                android:inputType="phone"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_date"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Joining Date"
+                android:inputType="none"
+                android:focusable="false"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_pass"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Password"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/fees"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_rupees"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Fees per month"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <EditText
+                android:id="@+id/downp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_rupees"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Downpayment"
+                android:inputType="number"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:textSize="22sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/mode"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/rounded"
+                android:drawableLeft="@drawable/ic_action_grade"
+                android:drawablePadding="15dp"
+                android:ems="10"
+                android:maxLines="1"
+                android:hint="Enter Mode"
+                android:paddingLeft="25dp"
+                android:paddingRight="15dp"
+                android:visibility="gone"
+                android:textSize="22sp"></AutoCompleteTextView>
+
+            <Button
+                android:id="@+id/register"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                android:background="@drawable/round"
+                android:text="REGISTER"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"></Button>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

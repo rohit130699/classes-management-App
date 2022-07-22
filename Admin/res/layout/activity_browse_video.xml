@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bground"
+    android:orientation="vertical"
+    tools:context=".browse_video">
+
+    <VideoView
+        android:id="@+id/vview"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:clickable="true"
+        android:elevation="5dp"
+        android:src="@drawable/ic_baseline_video_call_24"
+        app:borderWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/vview"
+        app:layout_constraintEnd_toEndOf="@+id/vview"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="@+id/vview"
+        app:layout_constraintTop_toTopOf="@+id/vview"
+        app:layout_constraintVertical_bias="0.908" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
+        android:hint="Enter Video Name"
+        android:maxLines="1"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/ic_baseline_videocam_24"
+        android:drawablePadding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vview"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <AutoCompleteTextView
+        android:id="@+id/std"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded"
+        android:hint="Enter the Standard"
+        android:inputType="number"
+        android:padding="15dp"
+        android:drawableLeft="@drawable/ic_action_grade"
+        android:drawablePadding="15dp"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.055" />
+
+    <Button
+        android:id="@+id/upbtn"
+        android:layout_width="210dp"
+        android:layout_height="50dp"
+        android:background="@drawable/round"
+        android:text="UPLOAD VIDEO"
+        android:textColor="@color/white"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_action_upload"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/std"
+        app:layout_constraintVertical_bias="0.124" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

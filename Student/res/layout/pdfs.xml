@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:id="@+id/cardv"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView
+            android:id="@+id/checkbtn"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_toLeftOf="@+id/stid"
+            android:elevation="5dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_baseline_check_circle_24"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" /> -->
+
+        <ImageView
+            android:id="@+id/pdf"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="1dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/snclass"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_toRightOf="@+id/pdf"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Name Here"
+            android:textColor="@color/black"
+            android:textSize="21dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.112"
+            app:layout_constraintStart_toEndOf="@+id/pdf"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.135" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/pdf"
+            android:paddingBottom="2dp"
+            android:text="Size Here"
+            android:textColor="@color/light_black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.073"
+            app:layout_constraintStart_toEndOf="@+id/pdf"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+        <TextView
+            android:id="@+id/u_date"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/size"
+            android:paddingBottom="2dp"
+            android:text="Date Here"
+            android:textColor="@color/light_black"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toEndOf="@+id/size"
+            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <!--<ImageView
+            android:id="@+id/download"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="2dp"
+            android:layout_toRightOf="@+id/name"
+            android:src="@drawable/down_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/download"
+            android:layout_width="36dp"
+            android:layout_height="32dp"
+            android:layout_toLeftOf="@+id/name"
+            android:elevation="5dp"
+            android:src="@drawable/down_arrow"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/light_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

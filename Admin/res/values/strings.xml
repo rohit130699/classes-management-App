@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">S.N. Classes</string>
+    <string name="default__notification_channel_id">Student Notification Channel</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>

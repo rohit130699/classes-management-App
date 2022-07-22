@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/curvy"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/ic_action_name"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:textSize="22sp"
+             />
+
+        <EditText
+            android:id="@+id/cno"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded"
+            android:drawableLeft="@drawable/ic_action_phone"
+            android:drawablePadding="15dp"
+            android:ems="10"
+            android:hint="Mobile Number"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/name"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:textSize="22sp"
+             />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/cno"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="22dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round"
+            android:text="UPDATE"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:layout_below="@+id/cno"
+            android:textStyle="bold"></Button>
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="125dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round"
+        android:text="CANCEL"
+        android:textColor="@color/white"
+        android:layout_below="@+id/cno"
+        android:layout_toRightOf="@+id/update"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

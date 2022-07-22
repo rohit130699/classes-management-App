@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Update"
+        android:icon="@drawable/ic_baseline_create_24"
+        android:id="@+id/menu_upd"
+        app:showAsAction="always"/>
+    <item
+        android:title="Delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:id="@+id/menu_del"
+        app:showAsAction="always"/>
+    <item
+        android:title="Select All"
+        android:icon="@drawable/ic_baseline_select_all_24"
+        android:id="@+id/menu_sel_all"
+        app:showAsAction="always"/>
+
+</menu>
